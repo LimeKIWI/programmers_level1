@@ -12,25 +12,18 @@ public class test11 {
 		
 		long[] arr = solution(a, b);
 		
-		for(long i : arr){
+		for(long i : arr) {
 			System.out.print(i+" ");
 		}
+		
+		sc.close();
 	}
 
 	public static long[] solution(int x, int n) {
-		
-//		long[] answer = new long[n];
-//		answer[0] = x;
-//		
-//		for(int i = 1; i < n; i++) {
-//			answer[i] = answer[i-1]+x;
-//		}
-//		
-//		return answer;
-		
-		long[] answer = new long[n];
+				
+		long[] answer = new long[n]; // 배열값 개수는 n이므로 
 		for(int i = 0; i < n; i++) {
-			answer[i] = (long)(i+1)*x;
+			answer[i] = (long)(i+1)*x; //각 배열에 저장될 값은 반복된 횟수(i+1)의 x배이므로 곱해서 넣기.
 		}
 		return answer;
 	}
